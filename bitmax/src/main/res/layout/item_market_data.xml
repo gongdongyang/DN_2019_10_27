@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/marker_rl_cell"
+    android:layout_width="fill_parent"
+    android:layout_height="74.0dip"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/icon_fu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="15.0dip"
+        android:textColor="@color/theme_content"
+        android:textSize="18.0sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/icon_zhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon_fu"
+        android:layout_marginStart="@dimen/dp_3"
+        android:layout_marginBottom="@dimen/dp_2"
+        android:layout_toRightOf="@+id/icon_fu"
+        android:textColor="@color/theme_sub_title"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_fu"
+        app:layout_constraintLeft_toRightOf="@+id/icon_fu" />
+
+    <TextView
+        android:id="@+id/icon_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1"
+        android:textColor="@color/theme_sub_title"
+        android:textSize="12.0sp"
+        app:layout_constraintLeft_toLeftOf="@+id/icon_fu"
+        app:layout_constraintTop_toBottomOf="@+id/icon_fu" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/icon_trend"
+        android:layout_width="80.0dip"
+        android:layout_height="32.0dip"
+        android:layout_marginRight="@dimen/dp_16"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dp_3"
+        android:paddingRight="@dimen/dp_3"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        app:autoSizeMinTextSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/icon_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38.0dip"
+        android:textColor="@color/theme_content"
+        android:textSize="18.0sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_fu"
+        app:layout_constraintRight_toLeftOf="@+id/icon_trend" />
+
+    <TextView
+        android:id="@+id/icon_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_close"
+        android:layout_alignRight="@id/icon_close"
+        android:layout_gravity="end"
+        android:textColor="@color/theme_sub_title"
+        android:textSize="12.0sp"
+        app:layout_constraintRight_toRightOf="@id/icon_close"
+        app:layout_constraintTop_toBottomOf="@id/icon_close" />
+</androidx.constraintlayout.widget.ConstraintLayout>

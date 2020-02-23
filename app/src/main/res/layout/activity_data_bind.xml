@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="user"
+            type="com.gdy.dn_2019_10_27.main.model.UserEntitiy"/>
+
+        <variable
+            name="mainHandler"
+            type="com.gdy.dn_2019_10_27.main.click.MainClickHandler"/>
+    </data>
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="lxf.androiddemos.ui.DatabindingActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            app:header = "@{user.header}"
+            />
+        <TextView
+            style="@style/text_base"
+            android:text="@{`name:`+user.name}"/>
+        <TextView
+            style="@style/text_base"
+            android:text="@{`sex:`+user.sex}"/>
+        <TextView
+            style="@style/text_base"
+            android:text="@{`age:`+String.valueOf(user.age)}"/>
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_go_list"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="@{mainHandler::onClickView}"
+            android:text="DataBinding之ListView"
+            />
+
+    </LinearLayout>
+</layout>

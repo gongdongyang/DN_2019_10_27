@@ -1,0 +1,9 @@
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+        rootProject.projectDir,
+        'my_flutter_module/.android/include_flutter.groovy'
+))
+include ':app', ':widget', ':network', ':ytool', ':base_recycleview'
+include ':basedialog', ':libannotation', ':libcompiler', ':libpermissionhepler'
+include  ':kchartlibrary', ':dwlibrary', ':bitmax', ':opengl'
+rootProject.name='DN_2019_10_27'

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/refresh">
+    <target
+        android:name="middle_rect"
+        android:animation="@animator/anim_middle_rect" />
+
+    <target
+        android:name="short_lines"
+        android:animation="@animator/anim_short_lines" />
+
+    <target
+        android:name="long_lines"
+        android:animation="@animator/anim_long_lines" />
+
+    <target
+        android:name="inner_rect"
+        android:animation="@animator/anim_inner_rect" />
+
+</animated-vector>

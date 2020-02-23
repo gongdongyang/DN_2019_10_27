@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DN_2019_10_27</string>
+    <string name="edit">编辑</string>
+    <string name="my_cahnnel">我的频道</string>
+    <string name="other_channel">隐藏频道</string>
+    <string name="text_content">注意：这一看跟scroll没啥区别啊，scroll是作为类似于一个header的形式存在的，当你欢动view的时候他会跟着一起往上滑，当先往下滑额时候他也会往下滑，直到view滑倒底部，他才会出现，而enterAlways是作为一个导航栏的东西，虽然向上滑动的时候它也会向上滑动，但他只是滑出界面，当你view向下滑动的时候，即使view已经滑动到底部，它也会立即滑动出来，而不会像单纯的scroll一样必须view滑倒头部才出来 版权声明：本文为CSDN博主「卖火柴的小男孩2019」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。注意：这一看跟scroll没啥区别啊，scroll是作为类似于一个header的形式存在的，当你欢动view的时候他会跟着一起往上滑，当先往下滑额时候他也会往下滑，直到view滑倒底部，他才会出现，而enterAlways是作为一个导航栏的东西，虽然向上滑动的时候它也会向上滑动，但他只是滑出界面，当你view向下滑动的时候，即使view已经滑动到底部，它也会立即滑动出来，而不会像单纯的scroll一样必须view滑倒头部才出来 版权声明：本文为CSDN博主「卖火柴的小男孩2019」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。注意：这一看跟scroll没啥区别啊，scroll是作为类似于一个header的形式存在的，当你欢动view的时候他会跟着一起往上滑，当先往下滑额时候他也会往下滑，直到view滑倒底部，他才会出现，而enterAlways是作为一个导航栏的东西，虽然向上滑动的时候它也会向上滑动，但他只是滑出界面，当你view向下滑动的时候，即使view已经滑动到底部，它也会立即滑动出来，而不会像单纯的scroll一样必须view滑倒头部才出来 版权声明：本文为CSDN博主「卖火柴的小男孩2019」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。注意：这一看跟scroll没啥区别啊，scroll是作为类似于一个header的形式存在的，当你欢动view的时候他会跟着一起往上滑，当先往下滑额时候他也会往下滑，直到view滑倒底部，他才会出现，而enterAlways是作为一个导航栏的东西，虽然向上滑动的时候它也会向上滑动，但他只是滑出界面，当你view向下滑动的时候，即使view已经滑动到底部，它也会立即滑动出来，而不会像单纯的scroll一样必须view滑倒头部才出来 版权声明：本文为CSDN博主「卖火柴的小男孩2019」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/u014644594/article/details/87804405</string>
+    <string name="tip_drag">长按编辑,拖拽排序</string>
+    <string name="title_activity_behavior">BehaviorActivity</string>
+    <string name="title_settings_dialog">Permissions Required</string>
+</resources>

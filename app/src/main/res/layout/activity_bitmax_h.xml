@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".btmx.activity.HBitmaxActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tab_market"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="市场"
+            android:textColor="@color/theme_content"
+            android:textSize="@dimen/size_16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/search_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:src="@mipmap/nav_btn_search_nol"
+             />
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_market"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        app:layout_constraintTop_toBottomOf="@+id/rl_title"
+        app:layout_constraintBottom_toTopOf="@+id/view_divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/theme_color"
+        app:tabSelectedTextColor="@color/theme_color"
+        app:tabTextAppearance="@style/tabTextstyle"
+        app:tabTextColor="@color/theme_title"
+        >
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="自选"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BTC"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ETH"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="USD"
+            />
+    </com.google.android.material.tabs.TabLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        android:background="@color/line_color"
+        android:layout_width="0dp"
+        android:layout_height="1.0px"
+        app:layout_constraintTop_toBottomOf="@+id/tab_market"
+        app:layout_constraintBottom_toTopOf="@+id/rec_market_list"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_market_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

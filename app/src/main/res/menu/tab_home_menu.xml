@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_view" android:id="@+id/tab_home" android:title="View" />
+    <item android:icon="@drawable/ic_vr" android:id="@+id/tab_opengl" android:title="OpenGL" />
+    <item android:icon="@drawable/ic_vr" android:id="@+id/tab_discover" android:title="资讯" />
+    <item android:icon="@drawable/ic_vr" android:id="@+id/tab_my" android:title="三方库" />
+</menu>

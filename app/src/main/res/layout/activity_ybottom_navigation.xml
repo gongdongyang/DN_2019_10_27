@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.activity.YBottomNavigation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_send_mqtt_smg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/maincontainer"
+            app:layout_constraintEnd_toEndOf="@+id/maincontainer"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bg_btn" />
+
+
+        <FrameLayout
+            android:id="@+id/maincontainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.gdy.dn_2019_10_27.widget.GapBottomNavigationView
+        android:id="@+id/bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:backgroundTint="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:cornerRadius="12dp"
+        app:anchor_fab="@id/fab_add"
+        app:shadow_length="12"
+        android:elevation="5dp"
+        app:itemBackground="@null"
+        app:itemIconTint="@color/main_text_black"
+        app:itemTextColor="@color/main_text_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/tab_home_menu_2"
+        tools:targetApi="lollipop" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/white"
+        android:elevation="2dp"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@color/main_text_black"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomnavigation"
+        app:layout_constraintEnd_toEndOf="@+id/bottomnavigation"
+        app:layout_constraintStart_toStartOf="@+id/bottomnavigation"
+        app:rippleColor="@color/colorAccent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

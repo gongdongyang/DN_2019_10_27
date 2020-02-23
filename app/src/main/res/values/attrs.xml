@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GapBottomNavigationView">
+        <attr name="anchor_fab" format="reference" />
+        <attr name="shadow_length" format="float" />
+        <attr name="corner_radius" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="HW_Loading_View">
+        <!--控件大小-->
+        <attr name="hlv_size" format="dimension"/>
+        <!---控件颜色-->
+        <attr name="hlv_color" format="color"/>
+        <!--转一圈花费时长-->
+        <attr name="hlv_duration" format="integer"/>
+    </declare-styleable>
+</resources>

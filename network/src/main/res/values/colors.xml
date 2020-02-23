@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="theme_color">#ff007aff</color>
+    <color name="theme_sub_title">#ff9ea7b4</color>
+    <color name="theme_color_bg">#ffffffff</color>
+
+    <color name="main_text_black">#232524</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_btn">#dadada</color>
+
+</resources>
